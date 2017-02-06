@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Barrio|Indie+Flower|Gloria+Hallelujah');
+@import url('https://fonts.googleapis.com/css?family=');
+
+@keyframes taxo {
+  0% {
+    transform: translateY(100%);
+    opacity: 0; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; }
+}
+
+@keyframes right {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes left {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes header {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+body{
+    width:100%;
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    background: #036;
+    color: white;
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 100, 200, 0.6), 0 6px 20px 0 rgba(0, 100, 200, 0.59);
+    animation: header 1s;
+}
+
+header nav{
+    width: 960px;
+    margin: auto;
+    color: #f60;
+    position: relative;
+}
+
+header nav h1{
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.6em;
+}
+
+header ul{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+header ul li {
+    display: inline;
+    border-bottom: 2px solid #f60;
+    padding: 15px 15px;
+    margin: 5px;
+    font-family: 'Gloria Hallelujah', cursive;
+    transition: 1s;
+    cursor: pointer;
+}
+
+header ul li:hover{
+    border: 1px solid #f60;
+    background: #f60;
+    color: white;
+}
+
+header .logo_style{
+    font-size: .4em;
+    font-style: italic;
+    font-family: 'Barrio', cursive;
+}
+
+.container{
+    margin: auto;
+    width: 960px;
+    margin-top: 20px;
+    animation: taxo 1s;
+}
+
+.container .left_pane{
+    float: left;
+    padding: 5px;
+    width: 55%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation: left 1s;
+}
+
+.container .right_pane{
+    float: right;
+    padding: 5px;
+    width: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation: right 1s;
+}
+
+.clear{
+    clear: both;
+}
+
+.forms input{
+    border: none;
+    border-bottom: 1px #ccc solid;
+    border-top: 1px #ccc solid;
+    background: #fff;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.forms .but{
+    border: none;
+    border-radius: 5px;
+    background: #f60;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    transition: 1s;
+}
+
+.forms .but:hover{
+    background: #036;
+}
+
+footer{
+    margin-top: 50px;
+    width: 100%;
+    background: #eee;
+}
+
+.footer-ul li{
+    display: inline;
+    padding: 5px;
+    margin: 5px;
+}
+
+.gradient{
+    background: linear-gradient(to right, rgba(0,100,200,.1) , rgba(255,100,0,1), rgba(0,100,200,.1));
+    height: 2px;
+    border: none;
+}
